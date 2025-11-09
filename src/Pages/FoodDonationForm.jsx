@@ -33,7 +33,7 @@ const response = await fetch(`${import.meta.env.VITE_API_URL}/api/food-donations
 
       if (response.ok) {
         // success
-        successTost();
+        successToast();
         // alert("✅ Donation submitted successfully!");
         setDonationFormData({ city: "", area: "", foodName: "", isPacked: false, edibleDays: "", phone: "", note: "" });
       } else {
@@ -45,20 +45,25 @@ const response = await fetch(`${import.meta.env.VITE_API_URL}/api/food-donations
     }
   };
 
-  const successTost = () => {
-    const toast = document.createElement("div");
-    toast.className = "toast toast-end";
-    toast.innerHTML = `
-    <div className="toast toast-end p-15 z-50">
-  <div className="alert alert-info">
-    <span>✅ Donation submitted successfully!</span>
-  </div>
-</div>`;
-    document.body.appendChild(toast);
-    
-  // Remove toast after 3 seconds
+ const successToast = () => {
+  const toast = document.createElement("div");
+
+  // Tailwind classes for top-center positioning and z-index
+  toast.className = "fixed top-5 left-1/2 transform -translate-x-1/2 z-50";
+
+  // Inner HTML for the green alert
+  toast.innerHTML = `
+    <div class="alert alert-success shadow-lg">
+      <span>✅ Donation submitted !</span>
+    </div>
+  `;
+
+  document.body.appendChild(toast);
+
+  // Remove toast after 5 seconds
   setTimeout(() => toast.remove(), 5000);
-  }
+};
+
 
   const handleChange = (name, value) => {
     setDonationFormData(prev => ({
