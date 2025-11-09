@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+body{
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+
+::selection {
+  background-color: #f19752;
+  color: #000000;
+}
+::-moz-selection{
+  background-color: #f19752;
+  color: #000000;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
