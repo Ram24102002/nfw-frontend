@@ -2,14 +2,10 @@ import React from 'react';
 import { MapPin , MapPinned } from 'lucide-react';
 import ChennaiImg from '../assets/Cities/Chennai.png';
 import MumbaiImg from '../assets/Cities/Mumbai.png';
-import DelhiImg from '../assets/Cities/Delhi.png';
 import BangaloreImg from '../assets/Cities/Banglore.png';
 import HyderabadImg from '../assets/Cities/Hydrabad.png';
 import KolkataImg from '../assets/Cities/Kolkata.png';
 import PuneImg from '../assets/Cities/Pune.png';
-import AhmedabadImg from '../assets/Cities/Ahmedabad.png';
-import JaipurImg from '../assets/Cities/Jaipur.png';
-import LucknowImg from '../assets/Cities/Lucknow.png';
 
 const IndianCityCards = () => {
   const cities = [
