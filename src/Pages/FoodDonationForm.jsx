@@ -77,7 +77,7 @@ const response = await fetch(`${import.meta.env.VITE_API_URL}/api/food-donations
   const [selected, setSelected] = useState("Hours");
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-t from-gray-100 to-white py-12 px-4">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
