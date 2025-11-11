@@ -96,8 +96,8 @@ export default function FoodDonationList() {
 
 
 
-                <dialog id={`note_${donation._id}`} className="modal">
-                  <div className="modal-box">
+                <dialog id={`note_${donation._id}`} className="modal dark:bg-white">
+                  <div className="modal-box dark:bg-white">
                     <h3 className="font-bold text-lg">{donation.foodName}</h3>
                     <p className="py-4">{donation.note || "No note provided."}</p>
                   </div>

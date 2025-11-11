@@ -93,7 +93,7 @@ function Nav() {
   return (
     <div>
       {/* Navigation Bar */}
-      <nav className="flex flex-col md:flex-row items-center justify-between md:px-8 mt-10 md:mt-4">
+      <nav className="flex flex-col bg-white md:flex-row items-center justify-between md:px-8 mt-10 md:mt-4">
         <Link to="/">
           <div className="flex items-center gap-2">
             <div className="w-15 h-15 rounded-full flex items-center justify-center">
@@ -153,13 +153,13 @@ function Nav() {
 
 
       {/* Drawer for FAQ */}
-      <div className="drawer">
+      <div className="drawer dark:bg-white">
         <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
 
-        <div className="drawer-side w-full md:w-1/2">
+        <div className="drawer-side w-full md:w-1/2 dark:bg-white">
           <label htmlFor="my-drawer-1" aria-label="close sidebar" className="drawer-overlay"></label>
 
-          <ul className="menu bg-base-200 min-h-full w-full p-4">
+          <ul className="menu bg-base-200 min-h-full w-full p-4 dark:bg-white">
             {/* Header */}
             <div className="flex justify-start items-center relative">
               <h2 className="text-2xl font-bold mt-20 md:mt-7 my-7 mx-4 md:flex">
@@ -180,7 +180,7 @@ function Nav() {
             {FAQ.slice(0, faqLimit).map((faq, index) => (
               <div
                 key={faq.id}
-                className="collapse collapse-arrow bg-base-100 border border-base-300"
+                className="collapse collapse-arrow bg-base-100 border border-base-300 dark:bg-white "
               >
                 <input
                   type="radio"

@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 body{
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
@@ -20,4 +26,12 @@ body{
 
 html {
   scroll-behavior: smooth;
+}
+
+
+/* Force light mode */
+:root {
+  color-scheme: light;
+  background-color: #fff;
+  color: #000;
 }
